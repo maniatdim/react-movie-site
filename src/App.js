@@ -8,7 +8,6 @@ import NoPage from './components/NoPage'
 
 function App() {
   return (
-    <>    
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Navbar />}>
@@ -18,7 +17,6 @@ function App() {
           </Route>
         </Routes>
       </BrowserRouter>
-    </>
   );
 }
 
