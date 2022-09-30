@@ -11,6 +11,16 @@ function App() {
   // const [searchResults, setsearchResults] = useState([]);
   const [searchText, setsearchText] = useState("");
 
+  useEffect(() => {
+    fetch(
+      `https://api.themoviedb.org/3/search/movie?api_key=46bdc290ee5b68255e0fc905786d4514&language=en-US&query=${searchText}&page=1&include_adult=false`
+    )
+      .then((response) => response.json())
+      .then((data) => {
+        console.log(data);
+      });
+  }, [searchText]);
+
   return (
     <BrowserRouter>
       <Routes>
