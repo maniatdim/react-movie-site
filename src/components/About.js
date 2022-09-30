@@ -1,11 +1,11 @@
-import React from 'react';
-import Header from './Header'
+import React from "react";
+import Header from "./Header";
 const About = () => {
   return (
     <>
-       <Header/>
+      <Header text="About Use" />
     </>
   );
-}
+};
 
 export default About;

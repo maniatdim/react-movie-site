@@ -1,13 +1,13 @@
-import React from 'react';
+import React from "react";
 
-const Header = () => {
+const Header = ({ text }) => {
   return (
     <>
       <header className="bg-dark text-white p-5">
-        <h1>About Use</h1>
+        <h1>{text}</h1>
       </header>
     </>
   );
-}
+};
 
 export default Header;
